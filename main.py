@@ -1,23 +1,13 @@
-#def fun1(n):
-   #print("hello")
-   #eturn n*(n+1)/2
+from math import sqrt
+number=int(input("enter no to check prime or not"))
 
-#print(fun1(10))
+if number>1:
+    for i in range(2,int(sqrt(number))+1):
+        if(number%i==0):
+            print("it is no prime")
+            break
+    else:
+                    print("no is prime")
 
-#def fun2(n):
-    #sum = 0
-    #for i in range(1, n+1):
-        #sum += i
-        #print("hello")
-    #return sum
-#print(fun2(10))
-
-def fun3(n):
-    sum = 0
-    for i in range(1, n+1):
-      for j in range(1,i+1):
-        print("hello")
-        sum += 1
-      print("hello")  
-    return sum
-print(fun3(10))  
+else:
+    print("no i not prime")                
